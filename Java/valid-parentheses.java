@@ -12,9 +12,7 @@ class Solution {
         if (start == ')' || start == '}' || start == ']') {
             return false;
         }
-        if (end == '(' || end == '{' || end == '[') {
-            return false;
-        }
+    
         Deque<Character> stack = new ArrayDeque<Character>();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
