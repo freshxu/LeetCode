@@ -7,7 +7,7 @@ class Solution {
         int temp = nums[0];
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] == temp) {
-                ++ repeatCount;
+                ++repeatCount;
             } else {
                 temp = nums[i];
                 nums[i - repeatCount] = temp;

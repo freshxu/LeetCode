@@ -7,9 +7,9 @@ class Solution {
         while (j < nums.size) {
             if (nums[i] < nums[j]) {
                 nums[i + 1] = nums[j]
-                i ++
-                j ++
-                newSize ++
+                i++
+                j++
+                newSize++
             } else {
                 j++
             }
