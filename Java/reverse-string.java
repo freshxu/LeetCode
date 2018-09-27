@@ -7,4 +7,19 @@ class Solution {
         }
         return sb.toString();
     }
+
+    // solution 2
+
+    public String reverseString(String s) {
+        char[] chars = s.toCharArray();
+        int left = 0;
+        int right = s.length() - 1;
+        while (left < right) {
+            char c = chars[left];
+            chars[left++] = chars[right];
+            chars[right--] = c;            
+        }
+        return String.valueOf(chars);
+    }
+    
 }
